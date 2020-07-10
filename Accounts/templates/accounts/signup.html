@@ -1,4 +1,4 @@
-{% include 'accounts/main.html' %} {% block content %}
+{% load static %}{% include 'accounts/main.html' %} {% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,11 +6,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href=" https://fonts.googleapis.com/css2?family=Montserrat&display=swap " rel=" stylesheet ">
+    <!-- fonts -->
+    <link rel=" stylesheet " type=" text/css " href=" {% static '/css/signup.css' %} ">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Hello</h1>
+
+
+    <form class="form-signin">
+        <p class="text-center">
+            <img src="static/img/animal.svg" />
+        </p>
+        <div class="input-group-login sombreado-input">
+            <div class="input-group-prepend-login">
+                <span class="input-group-text fondo-icon">
+                <i class="fas fa-user"></i>
+            </span>
+            </div>
+            <input type="email" class="border-0-login form-control-login input-border-none" placeholder="Email" />
+        </div>
+
+        <br />
+        <div class="input-group-login sombreado-input">
+            <div class="input-group-prepend-login">
+                <span class="input-group-text fondo-icon">
+                <i class="fas fa-lock"></i>
+            </span>
+            </div>
+            <input type="password" class="border-0-login form-control-login input-border-none" placeholder="Password" aria-label="Username" />
+        </div>
+
+        <br>
+        <p class="text-center">
+            <button class="button-signup fondo-color-signup">
+            <b>SIGNUP</b>
+        </button>
+        </p>
+        <p class="text-center">Already have an Account? Sign in</p>
+
+    </form>
 </body>
 
 </html>
