@@ -1,0 +1,52 @@
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block;
+    /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap img {
+    /* <= optional, for responsiveness */
+    position: relative;
+    display: block;
+    width: 55%;
+    height: auto;
+    top: 270px;
+    left: 250px;
+    z-index: 1;
+}
+
+.img-overlay-wrap svg {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    max-width: 100%;
+}
+
+.img-overlay-wrap .bottom {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 150px;
+    height: 100;
+    width: 50;
+}
+
+.img-overlay-wrap .top {
+    margin: 0 auto;
+    position: absolute;
+    top: 96px;
+    height: 25;
+    width: 25;
+    left: 54px;
+    text-align: center;
+}
+
+.img-overlay-wrap:hover {
+    transform: rotate( 15deg);
+}
+
+body {
+    background: #ebeff5;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
