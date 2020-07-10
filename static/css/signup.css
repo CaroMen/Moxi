@@ -1,6 +1,6 @@
 .form-signin {
     position: relative;
-    top: 50px;
+    top: 250px;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -23,14 +23,58 @@ body {
 
 img {
     /* <= optional, for responsiveness */
-    position: relative;
+    position: absolute;
     display: block;
+    text-align: left;
+    width: 55%;
+    height: auto;
+    top: -70px;
+    left: -120px;
+    z-index: -1;
+}
+
+.leaves img {
+    /* <= optional, for responsiveness */
+    position: absolute;
     /* text-align: left; */
     width: 55%;
     height: auto;
-    top: 55px;
+    top: -130px;
+    left: -100px;
+    z-index: -1;
+}
+
+.leaves-1 img {
+    /* <= optional, for responsiveness */
+    position: absolute;
+    /* text-align: left; */
+    width: 55%;
+    height: auto;
+    top: -90px;
     left: -120px;
-    z-index: 1;
+    z-index: -1;
+}
+
+.leaves-2 img {
+    /* <= optional, for responsiveness */
+    position: absolute;
+    /* text-align: left; */
+    width: 55%;
+    height: auto;
+    top: -120px;
+    left: 250px;
+    z-index: -1;
+}
+
+.leaves-3 img {
+    /* <= optional, for responsiveness */
+    position: absolute;
+    /* text-align: left; */
+    width: 55%;
+    height: auto;
+    top: -90px;
+    left: 230px;
+    z-index: -1;
 }
 
 
