@@ -30,7 +30,8 @@
     margin: 0 auto;
     position: relative;
     top: 0;
-    left: 180px;
+    bottom: 80px;
+    left: 140px;
     /* float: left; */
     height: auto;
     width: 100%;
