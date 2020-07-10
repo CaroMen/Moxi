@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ebeff5;
+    background: #F5F4F6;
     font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
@@ -23,7 +23,7 @@ a {
   ======================================================*/
 
 #navbar {
-    background: #ebeff5;
+    background: #F5F4F6;
     color: rgb(13, 26, 38);
     position: fixed;
     top: 0;
