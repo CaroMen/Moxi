@@ -1,4 +1,4 @@
-{% load static %}{% include 'accounts/main.html' %} {% block content %}
+{% load static %}{% include 'accounts/main.html' %}{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,6 @@
     <link href=" https://fonts.googleapis.com/css2?family=Montserrat&display=swap " rel=" stylesheet ">
     <!-- fonts -->
     <link rel=" stylesheet " type=" text/css " href=" {% static '/css/signup.css' %} ">
-    <title>Document</title>
 </head>
 
 <body>
@@ -18,7 +17,7 @@
 
     <form class="form-signin">
         <p class="text-center">
-            <img src="static/img/animal.svg" />
+            <img src="/static/img/animal.svg">
         </p>
         <div class="input-group-login sombreado-input">
             <div class="input-group-prepend-login">

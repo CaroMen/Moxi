@@ -1,5 +1,6 @@
 .form-signin {
     position: relative;
+    top: 50px;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -18,6 +19,18 @@ body {
     margin: 0;
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    /* <= optional, for responsiveness */
+    position: relative;
+    display: block;
+    /* text-align: left; */
+    width: 55%;
+    height: auto;
+    top: 55px;
+    left: -120px;
+    z-index: 1;
 }
 
 
@@ -150,31 +163,5 @@ input {
 }
 
 .fondo-color-signup {
-    background: #A00836;
-}
-
-
-/* BUTTON SOCIAL */
-
-.icons-position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-social {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    background-color: white;
-    margin: 10px;
-    /* BORDER RADIUS */
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 0px solid #000000;
-    /* SHAWDOW */
-    -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    background: #FFBA08;
 }
