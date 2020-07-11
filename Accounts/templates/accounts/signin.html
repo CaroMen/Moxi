@@ -9,7 +9,7 @@
     <!-- fonts -->
     <link href=" https://fonts.googleapis.com/css2?family=Montserrat&display=swap " rel=" stylesheet ">
     <!-- fonts -->
-    <link rel=" stylesheet " type=" text/css " href=" {% static '/css/signup.css' %} ">
+    <link rel=" stylesheet " type=" text/css " href=" {% static '/css/signin.css' %} ">
 </head>
 
 <body>
@@ -34,8 +34,8 @@
         <div class="input-group-login sombreado-input">
             <div class="input-group-prepend-login">
                 <span class="input-group-text fondo-icon">
-                <i class="fas fa-user"></i>
-            </span>
+                    <i class="fas fa-user"></i>
+                </span>
             </div>
             <input type="email" class="border-0-login form-control-login input-border-none" placeholder="Email" />
         </div>
@@ -44,8 +44,8 @@
         <div class="input-group-login sombreado-input">
             <div class="input-group-prepend-login">
                 <span class="input-group-text fondo-icon">
-                <i class="fas fa-lock"></i>
-            </span>
+                    <i class="fas fa-lock"></i>
+                </span>
             </div>
             <input type="password" class="border-0-login form-control-login input-border-none" placeholder="Password" aria-label="Username" />
         </div>
@@ -53,11 +53,9 @@
         <br>
         <p class="text-center">
             <button class="button-signup fondo-color-signup">
-            <b>SIGN UP</b>
-        </button>
+                <b>SIGN IN</b>
+            </button>
         </p>
-        <p class="text-center">Already have an Account? <a href="{% url 'signin' %}">Sign In</a></p>
-
     </form>
 </body>
 

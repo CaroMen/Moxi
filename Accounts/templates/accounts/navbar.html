@@ -12,7 +12,7 @@
         <!-- Navbar Logo -->
         <div class="logo">
             <!-- Logo Placeholder for Inlustration -->
-            <a href="#home"><i class="fas fa-chess-knight"></i> MOXI</a>
+            <a href="{% url 'home' %}"><i class="fas fa-chess-knight"></i> MOXI</a>
         </div>
 
         <!-- Navbar Links -->
@@ -20,7 +20,7 @@
             <li><a href="{% url 'home' %}">Home</a></li>
             <!--
    -->
-            <li><a href="#">Log In</a></li>
+            <li><a href="{% url 'signin' %}">Log In</a></li>
             <!--
    -->
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
