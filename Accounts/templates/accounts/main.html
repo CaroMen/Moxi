@@ -4,9 +4,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}" />
+    <script src="https://unpkg.com/vue"></script>
     <!-- <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}"> -->
     <script type="javascript" src="{% static 'js/navbar.js' %}"></script>
     <title>Home Page</title>
@@ -15,9 +16,20 @@
 <body>
     {% include 'accounts/navbar.html' %} {% block content %} {% endblock %}
 
-    <hr>
+    <hr />
+    <div id="app">
+        <p>${ message }$</p>
+    </div>
 
-
+    <script>
+        new Vue({
+            delimiters: ["${", "}$"],
+            el: "#app",
+            data: {
+                message: "Hello from Vue.js",
+            },
+        });
+    </script>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
